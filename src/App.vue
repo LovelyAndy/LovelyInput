@@ -1,21 +1,22 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import Tooltip from './components/Tooltip.vue'
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div
+    style="
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      margin-top: 3rem;
+      gap: 3em;
+    "
+  >
+    <Tooltip textColor="#4771FA" backgroundColor="white" flow="up"> Hover Me </Tooltip>
+    <Tooltip textColor="goldenrod" backgroundColor="indianred" flow="down"> Hover Me </Tooltip>
+    <Tooltip textColor="crimson" backgroundColor="#333" flow="left"> Hover Me </Tooltip>
+    <Tooltip textColor="white" backgroundColor="purple" flow="right"> Hover Me </Tooltip>
+  </div>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
