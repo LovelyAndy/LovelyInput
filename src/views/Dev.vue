@@ -1,6 +1,12 @@
 <template>
   <div class="_wrapper">
-    <LovelyInput style="padding: 0 10rem" v-model="text" :debounce="3000" />
+    <LovelyInput style="padding: 0 10rem; width: 500px" v-model="text" :debounce="3000" />
+    <LovelyInput
+      type="search"
+      style="padding: 0 10rem; width: 500px"
+      v-model="text"
+      :debounce="3000"
+    />
     {{ text }}
     <!-- <Tooltip textColor="#4771FA" backgroundColor="white" flow="up"> Hover Me </Tooltip>
     <Tooltip textColor="goldenrod" backgroundColor="indianred" flow="down"> Hover Me </Tooltip>
